@@ -28,6 +28,9 @@ fun NavigationApp(){
         composable("login_page", content = { LoginPage(navController = navController) })
         composable("register_page", content = { RegisterPage(navController = navController) })
         composable("reset_page", content = { ResetPage(navController = navController) })
+        composable("message_page", content = {MessagePage(navController = navController)})
+        composable("sample_chat_page", content = { ChatPage(navController = navController,
+            "0") })
     })
 }
 

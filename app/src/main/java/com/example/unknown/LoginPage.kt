@@ -110,7 +110,7 @@ fun LoginPage(navController: NavController) {
                 val isValidLogin = checkLoginCredentials(username, password)
                 if (isValidLogin) {
                     // Navigate to the next screen on successful login
-                    navController.navigate("register_page"){
+                    navController.navigate("message_page"){
                         popUpTo(navController.graph.startDestinationId)
                         launchSingleTop = true
                     }
