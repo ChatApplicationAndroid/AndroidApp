@@ -56,7 +56,6 @@ fun RegisterPage(navController: NavController) {
         var phone by rememberSaveable { mutableStateOf("") }
         var password by rememberSaveable { mutableStateOf("") }
         var passwordHidden by rememberSaveable { mutableStateOf(true) }
-        var datepicker by rememberSaveable { mutableStateOf(Date()) }
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -93,7 +92,8 @@ fun RegisterPage(navController: NavController) {
             OutlinedTextField(
                 value = phone,
                 onValueChange = { phone = it},
-                modifier = Modifier.fillMaxWidth(0.8f))
+                modifier = Modifier.fillMaxWidth(0.8f),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number))
 
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = "Password")
