@@ -59,7 +59,7 @@ fun ChatPage(
             modifier = Modifier.weight(1f)
         ) {
             items(chatMessages) { message ->
-                ChatMessage(message = message)
+                ChatMessage(message = message
             }
         }
 
